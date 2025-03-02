@@ -209,7 +209,9 @@ public class CrudOperation extends JFrame {
 
 
                 } catch (Exception ex) {
-                    System.out.println("Error:" + ex.getMessage());
+                    ex.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage(), "Database Error",
+                            JOptionPane.ERROR_MESSAGE);
 
                 }
             }
@@ -248,7 +250,9 @@ public class CrudOperation extends JFrame {
                     
 
                 } catch (Exception ex) {
-                    System.out.println("Error:" + ex.getMessage());
+                    ex.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Error: " + ex.getMessage(), "Database Error",
+                    JOptionPane.ERROR_MESSAGE);
 
                 }
             }
